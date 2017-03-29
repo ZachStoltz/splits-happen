@@ -1,4 +1,4 @@
-export default class Frame {
+class Frame {
   constructor(id, firstRoll = 0, secondRoll = 0, bonusRoll = 0) {
     this.id = id;
     this.firstRoll = firstRoll;
@@ -14,3 +14,6 @@ export default class Frame {
     return !this.isStrike() && (this.firstRoll + this.secondRoll === 10);
   }
 }
+
+module.exports = Frame;
+

@@ -1,5 +1,5 @@
-import Bowler from './Bowler';
-import Frame from './Frame';
+const Bowler = require('./Bowler');
+const Frame = require('./Frame');
 
 describe('Splits Happen tests', () => {
   let bowler;
@@ -69,6 +69,6 @@ describe('Splits Happen tests', () => {
     
     const score = bowler.calculateScore(frames);
     
-    expect(score).toEqual(300);
+    expect(score).toEqual(167);
   });
 });
